@@ -17,8 +17,6 @@ inputEl.addEventListener(
 
 function onSearch() {
   countryToSearch = inputEl.value;
-  console.log(countryToSearch);
-
   if (!countryToSearch) {
     clearMarkup();
     return;
@@ -72,6 +70,4 @@ function tooManyCountries() {
 
 function onFetchError(error) {
   clearMarkup();
-
-  console.log(error);
 }

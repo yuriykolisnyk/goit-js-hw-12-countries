@@ -5,7 +5,7 @@
 }
 body {
   margin: 0;
-  background-color: #edf2f2;
+  background-color: #96eeee;
   font-size: 30px;
   color: #090766;
   text-align: center;
@@ -16,15 +16,21 @@ img {
   display: block;
   height: auto;
 }
-ul {
-  list-style: none;
-}
+
 .input {
   border-radius: 5px;
+  width: 500px;
+  padding: 5px;
   &::placeholder {
     color: rgba(109, 109, 109, 0.5);
     font-size: 20px;
   }
+}
+
+.country-title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .country-card {
@@ -34,9 +40,15 @@ ul {
 }
 .country-info {
   margin-right: 20px;
+  text-align: left;
+  list-style: none;
 }
-.country-title {
-  text-align: center;
-  margin: 0;
-  margin-bottom: 25px;
+.country-details {
+  list-style: none;
+}
+
+.list-countries {
+  padding: 0 300px;
+  list-style: none;
+  text-align: left;
 }
