@@ -1,6 +1,10 @@
 import API from './fetchCountries.js';
 import debounce from 'lodash/debounce';
 
+import { error } from '@pnotify/core';
+import '@pnotify/core/dist/PNotify.css';
+import '@pnotify/core/dist/BrightTheme.css';
+
 import cardCountries from '../templates/cardCountries.hbs';
 import listCountries from '../templates/listCountries.hbs';
 
@@ -51,8 +55,7 @@ function clearMarkup() {
 }
 
 function noResult() {
-  info({
-    title: 'Uh Oh!',
+  error({
     text: 'No matches found!',
     delay: 1500,
     closerHover: true,
@@ -61,9 +64,8 @@ function noResult() {
 
 function tooManyCountries() {
   error({
-    title: 'Uh Oh!',
     text: 'Too many matches found. Please enter a more specific query!',
-    delay: 2500,
+    delay: 1500,
     closerHover: true,
   });
 }

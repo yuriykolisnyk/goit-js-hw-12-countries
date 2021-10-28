@@ -5,7 +5,7 @@
 }
 body {
   margin: 0;
-  background-color: #96eeee;
+  background-color: #d2dbdb;
   font-size: 30px;
   color: #090766;
   text-align: center;
@@ -51,4 +51,8 @@ img {
   padding: 0 300px;
   list-style: none;
   text-align: left;
+}
+
+.country-details__item {
+  font-weight: normal;
 }

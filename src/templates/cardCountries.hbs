@@ -3,12 +3,12 @@
 <div class='country-card'>
   <div class='country-info'>
     <ul class='country-details'>
-      <li><span>Capital:</span> {{capital}}</li>
-      <li><span>Population:</span> {{population}}</li>
-      <li><span>Languages:</span>
+      <li>Capital: <span class='country-details__item'>{{capital}}</span></li>
+      <li>Population: <span class='country-details__item'>{{population}}</span></li>
+      <li>Languages:
         <ul>
           {{#each languages}}
-            <li> {{name}}</li>
+            <li class='country-details__item'> {{name}}</li>
           {{/each}}
         </ul>
       </li>
