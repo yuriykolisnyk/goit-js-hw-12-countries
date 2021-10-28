@@ -1,7 +1,7 @@
 import API from './fetchCountries.js';
 import debounce from 'lodash/debounce';
 
-import { error } from '@pnotify/core';
+import { info, error } from '@pnotify/core';
 import '@pnotify/core/dist/PNotify.css';
 import '@pnotify/core/dist/BrightTheme.css';
 
@@ -57,15 +57,15 @@ function clearMarkup() {
 function noResult() {
   error({
     text: 'No matches found!',
-    delay: 1500,
+    delay: 2000,
     closerHover: true,
   });
 }
 
 function tooManyCountries() {
-  error({
+  info({
     text: 'Too many matches found. Please enter a more specific query!',
-    delay: 1500,
+    delay: 2000,
     closerHover: true,
   });
 }
